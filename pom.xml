@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  - EasyBeans
+  - Copyright (C) 2012 Bull S.A.S.
+  - Contact: easybeans@ow2.org
+  -
+  - This library is free software; you can redistribute it and/or
+  - modify it under the terms of the GNU Lesser General Public
+  - License as published by the Free Software Foundation; either
+  - version 2.1 of the License, or (at your option) any later version.
+  -
+  - This library is distributed in the hope that it will be useful,
+  - but WITHOUT ANY WARRANTY; without even the implied warranty of
+  - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  - Lesser General Public License for more details.
+  -
+  - You should have received a copy of the GNU Lesser General Public
+  - License along with this library; if not, write to the Free Software
+  - Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+  -
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  - $Id: pom.xml 6084 2012-01-16 11:05:48Z benoitf $
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>org.ow2</groupId>
+    <artifactId>ow2</artifactId>
+    <version>1.3</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.ow2.easybeans</groupId>
+  <artifactId>parent</artifactId>
+  <packaging>pom</packaging>
+  <name>EasyBeans :: Parent POM</name>
+  <version>2.0-SNAPSHOT</version>
+  <url>http://easybeans.ow2.org</url>
+  <inceptionYear>2006</inceptionYear>
+  <description>Lightweight and Modular EJB Container</description>
+  <issueManagement>
+    <system>jira</system>
+    <url>http://jira.easybeans.org/browse/EZB</url>
+  </issueManagement>
+  <developers />
+  <contributors />
+  <mailingLists>
+    <mailingList>
+      <name>EasyBeans Users List</name>
+      <subscribe>easybeans-subscribe@ow2.org</subscribe>
+      <unsubscribe>easybeans-unsubscribe@ow2.org</unsubscribe>
+      <archive>http://www.ow2.org/wws/arc/easybeans</archive>
+      <otherArchives>
+        <otherArchive>http://mail-archive.ow2.org/easybeans/index.html</otherArchive>
+      </otherArchives>
+    </mailingList>
+    <mailingList>
+      <name>EasyBeans Announce List</name>
+      <subscribe>easybeans-announce-subscribe@ow2.org</subscribe>
+      <unsubscribe>easybeans-announce-unsubscribe@ow2.org</unsubscribe>
+      <archive>http://www.ow2.org/wws/arc/easybeans-announce</archive>
+      <otherArchives>
+        <otherArchive>http://mail-archive.ow2.org/easybeans-announce/index.html</otherArchive>
+      </otherArchives>
+    </mailingList>
+    <mailingList>
+      <name>EasyBeans Developers List</name>
+      <subscribe>easybeans-dev-subscribe@ow2.org</subscribe>
+      <unsubscribe>easybeans-dev-unsubscribe@ow2.org</unsubscribe>
+      <archive>http://www.ow2.org/wws/arc/easybeans-dev</archive>
+      <otherArchives>
+        <otherArchive>http://mail-archive.ow2.org/easybeans-dev/index.html</otherArchive>
+      </otherArchives>
+    </mailingList>
+
+    <mailingList>
+      <name>EasyBeans Issue List</name>
+      <subscribe>easybeans-issues-subscribe@ow2.org</subscribe>
+      <unsubscribe>easybeans-issues-unsubscribe@ow2.org</unsubscribe>
+      <archive>http://www.ow2.org/wws/arc/easybeans-issues</archive>
+      <otherArchives>
+        <otherArchive>http://mail-archive.ow2.org/easybeans-issues/index.html</otherArchive>
+      </otherArchives>
+    </mailingList>
+    <mailingList>
+      <name>EasyBeans Commits List</name>
+      <subscribe>easybeans-commits-subscribe@ow2.org</subscribe>
+      <unsubscribe>easybeans-commits-unsubscribe@ow2.org</unsubscribe>
+      <archive>http://www.ow2.org/wws/arc/easybeans-commits</archive>
+      <otherArchives>
+        <otherArchive>http://mail-archive.ow2.org/easybeans-commits/index.html</otherArchive>
+      </otherArchives>
+    </mailingList>
+  </mailingLists>
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License Version 2.1</name>
+      <url>http://www.gnu.org/licenses/lgpl.html</url>
+    </license>
+  </licenses>
+
+  <!-- Define properties -->
+  <properties>
+    <!-- Project encoding -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <!-- Prefered dependencies version -->
+  <dependencyManagement />
+
+  <scm>
+    <connection>scm:git:git://gitorious.ow2.org/ow2-easybeans/parent.git</connection>
+    <url>http://gitorious.ow2.org/ow2-easybeans/parent</url>
+    <developerConnection>scm:git:git@gitorious.ow2.org:ow2-easybeans/parent.git</developerConnection>
+  </scm>
+
+  <build>
+
+    <!-- Prefered dependencies version of plugins -->
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.3</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>2.2-beta-3</version>
+          <configuration>
+            <!-- Use GNU Tar -->
+            <tarLongFileMode>gnu</tarLongFileMode>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>2.4.1</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>2.3.2</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>2.1</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.5</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-enforcer-plugin</artifactId>
+          <version>1.0-beta-1</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-help-plugin</artifactId>
+          <version>2.1.1</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.3.1</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-invoker-plugin</artifactId>
+          <version>1.5</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>2.3.1</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-rar-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>2.1</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>2.7</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-one-plugin</artifactId>
+          <version>1.2</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-plugin-plugin</artifactId>
+          <version>2.6</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.1</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-remote-resources-plugin</artifactId>
+          <version>1.1</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-repository-plugin</artifactId>
+          <version>2.1</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>2.5</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-scm-plugin</artifactId>
+          <version>1.4</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>2.1.1</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>2.1.2</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.6</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-report-plugin</artifactId>
+          <version>2.6</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-verifier-plugin</artifactId>
+          <version>1.0</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.cargo</groupId>
+          <artifactId>cargo-maven2-plugin</artifactId>
+          <version>1.0</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>buildnumber-maven-plugin</artifactId>
+          <version>1.0-beta-4</version>
+        </plugin>
+
+      </plugins>
+    </pluginManagement>
+
+    <!-- Default Goal -->
+    <defaultGoal>install</defaultGoal>
+
+    <plugins>
+
+       <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-resources-plugin</artifactId>
+         <configuration>
+           <encoding>UTF-8</encoding>
+         </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+
+      <!-- Add revision number in the jar files -->
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+               <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+            </manifest>
+            <manifestEntries>
+               <Implementation-Version>${project.version}.${buildNumber}</Implementation-Version>
+               <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
+            </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+
+      <!-- Do not trim stack trace -->
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <trimStackTrace>false</trimStackTrace>
+        </configuration>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+
+</project>
