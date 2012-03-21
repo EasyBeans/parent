@@ -100,6 +100,11 @@
     </license>
   </licenses>
 
+  <!-- Requires Maven 3.0.0 -->
+  <prerequisites>
+    <maven>3.0.0</maven>
+  </prerequisites>
+
   <!-- Define properties -->
   <properties>
     <!-- Project encoding -->
@@ -333,7 +338,7 @@
                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
             </manifest>
             <manifestEntries>
-               <Implementation-Version>${project.version}.${buildNumber}</Implementation-Version>
+               <Implementation-Version>${project.version}</Implementation-Version>
                <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
             </manifestEntries>
           </archive>
