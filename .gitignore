@@ -1,0 +1,13 @@
+# Maven
+# -----------------------------------
+target/
+
+# IntelliJ Idea
+# -----------------------------------
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+output-eclipse
+test-output
